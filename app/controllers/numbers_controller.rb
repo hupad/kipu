@@ -4,7 +4,7 @@ class NumbersController < ApplicationController
 	end
 
 	def humanize
-		@number = params[:number].to_i.to_words
+		@number = params[:number].to_i.humanize
 		respond_to do |format|
 			format.js
 		end
