@@ -6,12 +6,14 @@ gem 'bootstrap-sass', '~> 3.2.0'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'humanize'
+gem 'rails-controller-testing'
 
 group :development, :test do
   gem 'byebug'
   gem 'sqlite3'
   gem 'rspec-rails'
   gem 'factory_girl_rails'
+  gem 'headless'
 end
 
 group :development do
@@ -21,6 +23,7 @@ end
 
 group :test do
 	gem 'capybara'
+	gem "capybara-webkit"
 end
 
 group :production do
