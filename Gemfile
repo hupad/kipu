@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 
 gem 'rails', '5.0.0.1'
-gem 'sqlite3'
 gem 'sass-rails', '~> 5.0'
 gem 'bootstrap-sass', '~> 3.2.0'
 gem 'jquery-rails'
@@ -10,6 +9,7 @@ gem 'to_words'
 
 group :development, :test do
   gem 'byebug'
+  gem 'sqlite3'
 end
 
 group :development do
