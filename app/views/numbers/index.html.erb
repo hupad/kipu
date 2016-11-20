@@ -1,0 +1,13 @@
+<div class="container">
+
+	<h1>Humanize a number</h1>
+
+	<%= form_tag '', remote: true do %>
+		
+		<div class="alert" role="alert"></div>
+		<%= text_field_tag 'number', nil, class: 'number_value_class'  %>
+		<%= submit_tag 'Humanize', id: 'convert_number', class: 'btn btn-primary' %>
+
+	<% end %>
+
+</div>

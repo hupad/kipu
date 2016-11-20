@@ -1,0 +1,3 @@
+<% if @number.strip.length != 0 %>
+	$('.alert').append('<%= j render("message", :number_in_words => @number) %>').addClass('alert-success');
+<% end %>
