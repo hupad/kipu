@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
- get 'index', to: "numbers#index"
- post 'humanize', to: "numbers#humanize"
+	root "welcome#index"
+	get 'index', to: "numbers#index"
+	post 'humanize', to: "numbers#humanize"
 end
