@@ -8,3 +8,7 @@
   
 2. To run controller specs
   ** rspec spec/controllers/numbers_controller.rb
+  
+  
+  == Link to the app on Heroku
+   * https://shielded-dusk-70697.herokuapp.com/
