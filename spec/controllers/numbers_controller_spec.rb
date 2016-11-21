@@ -18,7 +18,7 @@ describe NumbersController do
 		it "converts an invalid number to zero" do
 			post :humanize, xhr: true, params: {number: "kaksfja"}
 
-			expect(assigns[:number]).to eq("kaksfja".to_i.humanize)
+			expect(assigns[:number]).to eq("Only numbers are allowed!")
 		end
 	end
 end

@@ -4,6 +4,13 @@ class NumbersController < ApplicationController
 	end
 
 	def humanize
-		@number = params[:number].to_i.humanize
+		@number = string_to_float_or_int(params[:number]).humanize
+	end
+
+	def string_to_float_or_int string
+		return "Input cannot be empty." if string.length == 0
+		return "Only numbers are allowed!" if string.to_i == 0
+		return string.to_f if string.include?('.') || string.include?(',')
+		string.to_i
 	end
 end

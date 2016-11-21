@@ -2,7 +2,7 @@
 
 	<h1>Humanize a number</h1>
 
-	<%= form_tag '/humanize', remote: true do %>
+	<%= form_tag '/humanize', method: :post, remote: true do %>
 		
 		<div class="alert" role="alert"></div>
 		<%= text_field_tag 'number', nil, class: 'number_value_class'  %>
